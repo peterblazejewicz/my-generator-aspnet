@@ -2,10 +2,12 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var path = require('path');
 
 module.exports = yeoman.Base.extend({
   initializing: function () {
     console.log(chalk.green('initializing'));
+    this.sourceRoot(path.join(__dirname, '../../templates'));
   },
   prompting: function () {
     console.log('prompting');
