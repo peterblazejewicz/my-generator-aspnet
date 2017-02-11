@@ -33,3 +33,12 @@ templates:
   - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/XUnit-CSharp/.template.config/template.json
   # XUnit-FSharp
   - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/XUnit-FSharp/.template.config/template.json
+  # Microsoft.DotNet.Test.ProjectTemplates.2.0
+  # MSTest-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/MSTest-CSharp/.template.config/template.json
+  # MSTest-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/MSTest-FSharp/.template.config/template.json
+  # XUnit-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/XUnit-CSharp/.template.config/template.json
+  # XUnit-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/XUnit-FSharp/.template.config/template.json
