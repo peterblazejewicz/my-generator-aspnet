@@ -1,7 +1,2 @@
 language: node_js
-node_js:
-  - v6
-  - v5
-  - v4
-  - '0.12'
-  - '0.10'
+# node_js: is not required - based on .nvmrc
