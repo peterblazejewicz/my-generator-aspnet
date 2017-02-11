@@ -8,18 +8,25 @@ const istanbul = require('gulp-istanbul');
 const nsp = require('gulp-nsp');
 const plumber = require('gulp-plumber');
 
-gulp.task('static', () => gulp.src('**/*.js').pipe(excludeGitignore()).pipe(eslint()).pipe(eslint.format()).pipe(eslint.failAfterError()));
+gulp.task('static', () => gulp
+  .src('**/*.js')
+  .pipe(excludeGitignore())
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError()));
 
 gulp.task('nsp', cb => nsp({
   package: path.resolve('package.json')
 }, cb));
 
-gulp.task('pre-test', () => gulp.src('generators/**/*.js').pipe(excludeGitignore()).pipe(istanbul({includeUntested: true})).pipe(istanbul.hookRequire()));
+gulp.task('pre-test', () => gulp.src('generators/**/*.js')
+  .pipe(excludeGitignore())
+  .pipe(istanbul({includeUntested: true}))
+  .pipe(istanbul.hookRequire()));
 
 gulp.task('test', ['pre-test'], cb => {
   let mochaErr;
-  gulp
-    .src('test/**/*.js')
+  gulp.src('test/**/*.js')
     .pipe(plumber())
     .pipe(mocha({reporter: 'spec'}))
     .on('error', err => {
