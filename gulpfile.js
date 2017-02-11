@@ -36,7 +36,9 @@ gulp.task('nsp', cb => nsp({
 
 gulp.task('pre-test', () => gulp.src('generators/**/*.js')
   .pipe(excludeGitignore())
-  .pipe(istanbul({includeUntested: true}))
+  .pipe(istanbul({
+    includeUntested: true
+  }))
   .pipe(istanbul.hookRequire()));
 
 gulp.task('test', ['pre-test'], cb => {
@@ -44,7 +46,9 @@ gulp.task('test', ['pre-test'], cb => {
   gulp
     .src('test/**/*.js')
     .pipe(plumber())
-    .pipe(mocha({reporter: 'spec'}))
+    .pipe(mocha({
+      reporter: 'spec'
+    }))
     .on('error', err => {
       mochaErr = err;
     })
