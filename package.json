@@ -14,7 +14,6 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
     "yeoman-generator"
   ],
   "dependencies": {
@@ -34,6 +33,7 @@
     "gulp-mocha": "^3.0.1",
     "gulp-nsp": "^2.4.2",
     "gulp-plumber": "^1.1.0",
+    "js-yaml": "^3.8.1",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
   },

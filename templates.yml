@@ -1,0 +1,26 @@
+# templates feed
+---
+templates:
+  # Microsoft.DotNet.Common.ItemTemplates
+  # Nuget
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Nuget/.template.config/template.json"
+  # Solution
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Solution/.template.config/template.json"
+  # Microsoft.DotNet.Common.ProjectTemplates.1.x
+  # ClassLibrary-CSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ClassLibrary-CSharp/.template.config/template.json"
+  # ClassLibrary-FSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ClassLibrary-FSharp/.template.config/template.json"
+  # ConsoleApplication-CSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ConsoleApplication-CSharp/.template.config/template.json"
+  # ConsoleApplication-FSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ConsoleApplication-FSharp/.template.config/template.json"
+  # Microsoft.DotNet.Common.ProjectTemplates.2.0
+  # ClassLibrary-CSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ClassLibrary-CSharp/.template.config/template.json"
+  # ClassLibrary-FSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ClassLibrary-FSharp/.template.config/template.json"
+  # ConsoleApplication-CSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ConsoleApplication-CSharp/.template.config/template.json"
+  # ConsoleApplication-FSharp
+  - "https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ConsoleApplication-FSharp/.template.config/template.json"
