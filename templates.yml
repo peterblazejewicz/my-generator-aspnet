@@ -42,3 +42,21 @@ templates:
   - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/XUnit-CSharp/.template.config/template.json
   # XUnit-FSharp
   - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.2.0/content/XUnit-FSharp/.template.config/template.json
+  # Microsoft.DotNet.Web.ProjectTemplates.1.x
+  # EmptyWeb-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.1.x/content/EmptyWeb-CSharp/.template.config/template.json
+  # StarterWeb-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.1.x/content/StarterWeb-CSharp/.template.config/template.json
+  # StarterWeb-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.1.x/content/StarterWeb-FSharp/.template.config/template.json
+  # WebApi-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.1.x/content/WebApi-CSharp/.template.config/template.json
+  # Microsoft.DotNet.Web.ProjectTemplates.2.0
+  # EmptyWeb-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.2.0/content/EmptyWeb-CSharp/.template.config/template.json
+  # StarterWeb-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.2.0/content/StarterWeb-CSharp/.template.config/template.json
+  # StarterWeb-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.2.0/content/StarterWeb-FSharp/.template.config/template.json
+  # WebApi-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Web.ProjectTemplates.2.0/content/WebApi-CSharp/.template.config/template.json
