@@ -1,39 +1,40 @@
 {
-  "name": "generator-my-generator",
-  "private": false,
+  "name": "generator-aspnet",
   "version": "0.0.0",
-  "description": "My Generator",
+  "description": "Validate dotnet async tasks",
   "homepage": "",
+  "private": true,
   "author": {
     "name": "Peter Blazejewicz",
+    "email": "blazejewicz@example.com",
     "url": ""
   },
   "files": [
     "generators"
   ],
+  "main": "generators/index.js",
   "keywords": [
     "",
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.24.1",
-    "chalk": "^1.1.3",
-    "yosay": "^1.2.0"
+    "yeoman-generator": "^0.23.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.0"
   },
   "devDependencies": {
+    "yeoman-test": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
     "eslint": "^3.1.1",
     "eslint-config-xo-space": "^0.14.0",
     "gulp": "^3.9.0",
-    "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^2.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^1.0.0",
     "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
     "gulp-mocha": "^2.0.0",
-    "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
-    "yeoman-assert": "^2.2.1",
-    "yeoman-test": "^1.4.0"
+    "gulp-nsp": "^2.1.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -41,10 +42,10 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/peterblazejewicz/my-generator.git",
+  "repository": "https://github.com/peterblazejewicz/my-generator-aspnet.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "unlicense"
+  "license": "Apache-2.0"
 }

@@ -2,18 +2,12 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var path = require('path');
 
 module.exports = yeoman.Base.extend({
-  initializing: function () {
-    console.log(chalk.green('initializing'));
-    this.sourceRoot(path.join(__dirname, '../../templates'));
-  },
   prompting: function () {
-    console.log('prompting');
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the brilliant ' + chalk.red('generator-my-generator') + ' generator!'
+      'Welcome to the polished ' + chalk.red('generator-aspnet') + ' generator!'
     ));
 
     var prompts = [{
@@ -28,26 +22,15 @@ module.exports = yeoman.Base.extend({
       this.props = props;
     }.bind(this));
   },
-  configuring: function () {
-    console.log('configuring');
-  },
-  default: function () {
-    console.log('default');
-  },
+
   writing: function () {
     this.fs.copy(
       this.templatePath('dummyfile.txt'),
       this.destinationPath('dummyfile.txt')
     );
   },
-  conflicts: function () {
-    console.log('conflicts');
-  },
+
   install: function () {
-    console.log('install');
     this.installDependencies();
-  },
-  end: function () {
-    console.log('end');
   }
 });
