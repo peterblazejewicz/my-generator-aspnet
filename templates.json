@@ -1,0 +1,9 @@
+[
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Nuget/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Solution/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ClassLibrary-CSharp/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ClassLibrary-FSharp/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ConsoleApplication-CSharp/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ConsoleApplication-FSharp/.template.config/template.json",
+  "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ClassLibrary-CSharp/.template.config/template.json"
+]

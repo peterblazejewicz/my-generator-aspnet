@@ -1,15 +1,28 @@
 'use strict';
-const path = require('path');
-const gulp = require('gulp');
+const download = require('gulp-download-stream');
 const eslint = require('gulp-eslint');
 const excludeGitignore = require('gulp-exclude-gitignore');
-const mocha = require('gulp-mocha');
+const gulp = require('gulp');
 const istanbul = require('gulp-istanbul');
+const mocha = require('gulp-mocha');
 const nsp = require('gulp-nsp');
+const path = require('path');
 const plumber = require('gulp-plumber');
+const templates = require('./templates.json');
 
-gulp.task('static', () => gulp
-  .src('**/*.js')
+gulp.task('download', () => {
+  const reg = /template_feed\/(.*)$/;
+  let files = templates.map(template => {
+    return {
+      file: template.match(reg)[1],
+      url: template
+    };
+  });
+  return download(files)
+    .pipe(gulp.dest('./template_feed'));
+});
+
+gulp.task('static', () => gulp.src('**/*.js')
   .pipe(excludeGitignore())
   .pipe(eslint())
   .pipe(eslint.format())
@@ -26,7 +39,8 @@ gulp.task('pre-test', () => gulp.src('generators/**/*.js')
 
 gulp.task('test', ['pre-test'], cb => {
   let mochaErr;
-  gulp.src('test/**/*.js')
+  gulp
+    .src('test/**/*.js')
     .pipe(plumber())
     .pipe(mocha({reporter: 'spec'}))
     .on('error', err => {
