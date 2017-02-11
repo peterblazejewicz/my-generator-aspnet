@@ -24,3 +24,12 @@ templates:
   - "https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ConsoleApplication-CSharp/.template.config/template.json"
   # ConsoleApplication-FSharp
   - "https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ProjectTemplates.2.0/content/ConsoleApplication-FSharp/.template.config/template.json"
+  # Microsoft.DotNet.Test.ProjectTemplates.1.x
+  # MSTest-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/MSTest-CSharp/.template.config/template.json
+  # MSTest-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/MSTest-FSharp/.template.config/template.json
+  # XUnit-CSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/XUnit-CSharp/.template.config/template.json
+  # XUnit-FSharp
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Test.ProjectTemplates.1.x/content/XUnit-FSharp/.template.config/template.json
