@@ -2,26 +2,17 @@
 const download = require('gulp-download-stream');
 const eslint = require('gulp-eslint');
 const excludeGitignore = require('gulp-exclude-gitignore');
-const fs = require('fs');
 const gulp = require('gulp');
 const istanbul = require('gulp-istanbul');
 const mocha = require('gulp-mocha');
 const nsp = require('gulp-nsp');
 const path = require('path');
 const plumber = require('gulp-plumber');
-const yaml = require('js-yaml');
+const templates = require('./lib/utils/templates');
 
-gulp.task('download', () => {
-  const reg = /template_feed\/(.*)$/;
-  const config = yaml.safeLoad(fs.readFileSync('./templates.yml', 'utf8'), {json: true});
-  let files = config.templates.map(template => {
-    return {
-      file: template.match(reg)[1],
-      url: template
-    };
-  });
-  return download(files)
-    .pipe(gulp.dest('./template_feed'));
+gulp.task('update-templates', () => {
+  let files = templates.mapFilesAndUrls();
+  return download(files).pipe(gulp.dest('./template_feed'));
 });
 
 gulp.task('static', () => gulp.src('**/*.js')
