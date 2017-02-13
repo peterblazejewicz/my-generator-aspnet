@@ -6,6 +6,8 @@ templates:
   - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Nuget/.template.config/template.json"
   # Solution
   - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/Solution/.template.config/template.json"
+  # Web.congif
+  - https://raw.githubusercontent.com/dotnet/templating/master/template_feed/Microsoft.DotNet.Common.ItemTemplates/content/WebConfig/.template.config/template.json
   # Microsoft.DotNet.Common.ProjectTemplates.1.x
   # ClassLibrary-CSharp
   - "https://raw.githubusercontent.com/dotnet/templating/fbec36e815df730e06027488e307bf9953a2d77e/template_feed/Microsoft.DotNet.Common.ProjectTemplates.1.x/content/ClassLibrary-CSharp/.template.config/template.json"
