@@ -21,15 +21,37 @@ module.exports = class extends Generator {
     const prompts = [
       {
         type: 'list',
-        name: 'tags',
+        name: 'template',
         message: 'What type of dotnet template do you want to instantiate?',
+        choices: [
+          {
+            name: 'Project Template',
+            value: 'project'
+          }, {
+            name: 'Item Template',
+            value: 'item'
+          }
+        ]
+      }, {
+        type: 'list',
+        name: 'tags',
+        message: 'Select project template to instantiate:',
         choices: helper.getProjectChoices(),
-        pageSize: 10
+        pageSize: 10,
+        when: answers => answers.template === 'project'
+      }, {
+        type: 'list',
+        name: 'tags',
+        message: 'Select item template to instantiate:',
+        choices: helper.getItemChoices(),
+        pageSize: 10,
+        when: answers => answers.template === 'item'
       }
     ];
     return this
       .prompt(prompts)
       .then(answers => {
+        this.options.template = answers.template;
         this.options.type = answers.tags.type;
         this.options.language = answers.tags.language;
       });
@@ -42,8 +64,14 @@ module.exports = class extends Generator {
   default() {}
 
   writing() {
-    this.log('dotnet', 'new', this.options.type, '-lang', this.options.language);
-    this.spawnCommandSync('dotnet', ['new', this.options.type, '-lang', this.options.language]);
+    if (this.options.template === 'project') {
+      this.log('dotnet', 'new', this.options.type, '-lang', this.options.language);
+      this.spawnCommandSync('dotnet', ['new', this.options.type, '-lang', this.options.language]);
+    }
+    if (this.options.template === 'item') {
+      this.log('dotnet', 'new', this.options.type);
+      this.spawnCommandSync('dotnet', ['new', this.options.type]);
+    }
   }
 
   conflicts() {}
