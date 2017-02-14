@@ -1,36 +1,63 @@
 # generator-aspnet [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Validate dotnet async tasks
 
-## Installation
+## Usage
 
-First, install [Yeoman](http://yeoman.io) and generator-aspnet using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+The updated flow based on configuration files:
 
-```bash
-npm install -g yo
-npm install -g generator-aspnet
+```
+➜  development yo aspnet2
+
+     _-----_     ╭──────────────────────────╮
+    |       |    │    Welcome to the new,   │
+    |--(o)--|    │         polished         │
+   `---------´   │     generator-aspnet     │
+    ( _´U`_ )    │        generator!        │
+    /___A___\   /╰──────────────────────────╯
+     |  ~  |     
+   __'.___.'__   
+ ´   `  |° ´ Y ` 
+
+? What type of dotnet template do you want to instantiate? (Use arrow keys)
+❯ Project Template 
+  Item Template 
 ```
 
-Then generate your new project:
-
-```bash
-yo aspnet
+```
+➜  development yo aspnet2
+? What type of dotnet template do you want to instantiate? Project Template
+? Select project template to instantiate: (Use arrow keys)
+❯ Class library (C#) 
+  Class library (F#) 
+  Console Application (C#) 
+  Console Application (F#) 
+  Unit Test Project (C#) 
+  Unit Test Project (F#) 
+  xUnit Test Project (C#) 
+  xUnit Test Project (F#) 
+  Empty ASP.NET Core Web Application (C#) 
+  MVC ASP.NET Core Web Application (C#) 
+  MVC ASP.NET Core Web Application (F#) 
+  Web API ASP.NET Core Web Application (C#)
 ```
 
-## Getting To Know Yeoman
+```
+➜  development yo aspnet2
+? What type of dotnet template do you want to instantiate? Item Template
+? Select item template to instantiate: (Use arrow keys)
+❯ Nuget Config 
+  Solution File 
+  Web Config 
+```
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+```
+? What type of dotnet template do you want to instantiate? Project Template
+? Select project template to instantiate: Unit Test Project (F#)
+dotnet new mstest -lang F#
+Content generation time: 73.8738 ms
+The template "Unit Test Project" created successfully.
+```
 
-## License
+## Author
 
-Apache-2.0 © [Peter Blazejewicz]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-aspnet.svg
-[npm-url]: https://npmjs.org/package/generator-aspnet
-[travis-image]: https://travis-ci.org/peterblazejewicz/generator-aspnet.svg?branch=master
-[travis-url]: https://travis-ci.org/peterblazejewicz/generator-aspnet
-[daviddm-image]: https://david-dm.org/peterblazejewicz/generator-aspnet.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/peterblazejewicz/generator-aspnet
+@peterblazejewicz
